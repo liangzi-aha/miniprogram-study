@@ -1,0 +1,56 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/productList/productList",
+    "pages/mine/mine",
+    "pages/study/study",
+    "pages/productDetail/productDetail",
+    "pages/article/article",
+    "pages/loginRegister/loginRegister"
+  ],
+  "window": {
+    "enablePullDownRefresh": true,
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#8f8a8a",
+    "selectedColor": "#5b8aff",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "assets/images/tabbar/homeTabbar.png",
+        "selectedIconPath": "assets/images/tabbar/homeTabbar1.png"
+      },
+      {
+        "pagePath": "pages/productList/productList",
+        "text": "分类",
+        "iconPath": "assets/images/tabbar/classlistTabbar.png",
+        "selectedIconPath": "assets/images/tabbar/classlistTabbar1.png"
+      },
+      {
+        "pagePath": "pages/study/study",
+        "text": "学习",
+        "iconPath": "assets/images/tabbar/studyTabbar.png",
+        "selectedIconPath": "assets/images/tabbar/studyTabbar1.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "assets/images/tabbar/mineTabbar.png",
+        "selectedIconPath": "assets/images/tabbar/mineTabbar1.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+    "customtabbar": "custom-tab-bar/index"
+  },
+  "useExtendedLib": {
+    "weui": true
+  }
+}

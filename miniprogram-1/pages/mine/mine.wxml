@@ -1,0 +1,76 @@
+<!--pages/mine/mine.wxml-->
+<view class="page">
+    <view class="mine_title">
+        保险经纪网
+        <view class="mine_icon">
+            <mp-icon icon="setting" color="black" size="{{22}}" style="margin-right:3px"></mp-icon>   
+            <mp-icon icon="me" color="black" size="{{22}}"></mp-icon>
+        </view>
+    </view>
+    <view class="mine_user">
+        <image class="mine_user_bgc" src="../../assets/images/mine/minebg.png"></image>
+        <view class="mine_userHead">
+            <image src="../../assets/images/mine/headimg.png"></image>
+        </view>
+        <view class="user_dateils">
+            <view>您还未登录，请先登录</view>
+            <view class="login" bindtap="login">登录/注册</view>
+        </view>
+        <view class="mine_user_icon">
+            <mp-icon icon="arrow" color="white" size="{{15}}"></mp-icon>
+        </view>
+    </view>
+    <view class="mypolicy">
+        <view class="policyList">
+            <view class="sameTitle">
+                <view class="leftB"></view>
+                <view class="titleA">
+                    我的保单
+                </view>
+            </view>
+        </view>
+        <view class="policyContenet">
+            <view>
+                <image mode="widthFix" src="../../assets/images/mine/policy1.png"></image>
+                <view>个险保单</view>
+            </view>
+            <view>
+                <image mode="widthFix" src="../../assets/images/mine/policy2.png"></image>
+                <view>行业保单</view>
+            </view>
+            <view>
+                <image mode="widthFix" src="../../assets/images/mine/policy3.png"></image>
+                <view>车险保单</view>
+            </view>
+        </view>
+    </view>
+    <view class="agent">
+        <image mode="widthFix" src="../../assets/images/mine/dlrbanner.png"></image>
+    </view>
+    <view class="other">
+        <view class="policyList">
+            <view class="sameTitle" style="border:0;">
+                <view class="leftB"></view>
+                <view class="titleA">
+                    其他
+                </view>
+            </view>
+        </view>
+        <view class="otherList">
+            <mp-cells>
+                <mp-cell link value="活动专区" >
+                    <image slot="title" src="../../assets/images/mine/other1.png" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+                </mp-cell>
+                <mp-cell link value="常用联系人" >
+                    <image slot="title" src="../../assets/images/mine/other2.png" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+                </mp-cell>
+                <mp-cell link value="理赔报案" >
+                    <image slot="title" src="../../assets/images/mine/other3.png" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+                </mp-cell>
+                <mp-cell link value="客服中心" >
+                    <image slot="title" src="../../assets/images/mine/other4.png" style="margin-right: 16px;vertical-align: middle;width:20px; height: 20px;"></image>
+                </mp-cell>
+            </mp-cells>
+        </view>
+    </view>
+</view>

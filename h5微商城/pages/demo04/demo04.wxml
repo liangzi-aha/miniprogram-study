@@ -1,0 +1,26 @@
+<!-- 
+    1 需要给input 绑定 input事件
+    绑定换减震bindinput
+    2 如何获取输入框的值
+        通过事件源对象获取 e.detail.vaue
+    3 把输入框的值 赋值到data当中
+        错误写法
+            1 this.data.num = e.detail.value.
+        正确写法
+            this.setData({
+                num:e.detail.value
+            })
+    4 按钮加入一个点击事件
+        1 bindtap
+        2 无法在小程序当中的 事件中 直接传参的
+        3 通过之定义属性的方式来传递参数
+        4 事件源中获取 自定义属性
+ -->
+
+<input type="number" bindinput="handleInput"/>
+<button bindtap="handleTap" data-calculate="{{1}}">+</button>
+<button bindtap="handleTap" data-calculate="{{-1}}">-</button>
+<view>
+    {{num}}
+</view>
+  

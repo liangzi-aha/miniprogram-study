@@ -1,0 +1,161 @@
+<!-- 
+    1、text标签相当于以前web中的span标签 行内元素 不会换行
+    2、view 标签相当于以前web中的div标签 会换行
+ -->
+<text>1</text>
+<text>2</text>
+
+<!-- 插值表达式 -->
+<!-- 字符串 -->
+<view>
+    {{ msg }}
+</view>
+<!-- 数字 -->
+<view>
+    {{ num }}
+</view>
+<!-- 布尔 -->
+<view>
+     是否为真{{ isTrue }}
+</view>
+<!-- 对象类型 -->
+<view>
+    身高:{{ person.height }}
+</view>
+<view>
+    性别:{{ person.sex }}
+</view>
+
+<!-- 在标签的属性中使用 -->
+<view data-num="{{ num }}">
+    自定义属性
+</view>
+
+<!-- 使用布尔类型充当属性 checked
+    1、使用插值表达式时，字符串和花括号之间移动不要存在空格 否则会导致识别失败
+        一下错误示范
+        <checkbox checked=" {{isTrue}}">
+    
+    </checkbox>
+-->
+<view>
+    <checkbox checked="{{isTrue}}">
+    
+    </checkbox>
+</view>
+  
+<!-- 
+    运算符 => 表达式 
+    1、可以在花括号中加入表达式 -- "语句"
+    2、表达式
+        指的是一些简单运算 数字运算 字符串拼接 逻辑运算
+        1 数字的加减
+        2 字符串拼接
+        3三元表达式
+    3、语句
+        复杂的代码段
+        1、if else
+        2、Switch
+        3、do while
+        4、for
+-->
+
+<view>
+    {{ 1+2 }}
+</view>
+
+<view>
+    {{ "1" + "2" }}
+</view>
+
+<view>
+    {{ 11%2 === 1 ? '基数' : '偶数' }}
+</view>
+  
+
+  <!-- 
+      列表循环
+      1、wx:for={{数组或对象}}
+      2、 wx:for-item="循环项的名称"
+      2、wx:for-index="循环项的索引"
+      3、wx:key 绑定一个普通的字符串的时候 那么多字符串名称 肯定是 循环数组中的对象的唯一属性
+      4、wx:key="*this" 就表示 你的数组是一个普通的数组 *this 表示循环项
+      5、默认情况下 我们不写
+      wx:for-item="item" wx:for-index="index" 
+      小程序默认的索引和名称也是 index 和item
+   -->
+
+   <view>
+       <view wx:for="{{list}}" wx:for-item="item" wx:for-index="index" wx:key="id">
+           索引：{{index}}
+           name:{{item.name}}
+       </view>
+   </view>
+
+   <!-- 
+       block 标签
+       1 占位符的标签
+       2 写代码的时候 可以看到这个标签的存在
+       3 页面渲染 小程序会把它删除掉
+       4、循环渲染又不想包裹一层标签是使用block标签
+    -->
+
+    <view>
+       <block  wx:for="{{list}}" wx:for-item="item" wx:for-index="index" wx:key="id">
+           索引：{{index}}
+           name:{{item.name}}
+       </block>
+   </view>
+
+
+   <!-- 
+       条件渲染
+         1、wx:if 条件渲染
+         wx:if
+         wx:elif
+         wx:else
+         2、hidden
+            直接在标签上加hidden
+        3、什么情况下使用if和hidden
+            1、当标签循环展示的时候使用 hidden 隐藏标签，不会重新渲染
+            2、当标签不频繁展示时，使用if语句，条件改变会重新渲染标签
+    -->
+    <view>
+        <view>
+            条件渲染
+        </view>
+        <view wx:if="{{true}}">
+            啦啦啦
+        </view>
+        <view wx:if="{{false}}">
+            傻逼
+        </view>
+
+        <view wx:if="{{false}}">
+            hell
+        </view>
+        <view wx:elif="{{true}}">
+            word
+        </view>
+        <view wx:else>
+            you to you up
+        </view>
+        <view hidden="{{true}}">
+            hidden
+        </view>
+          
+          
+    </view>
+      
+
+
+     
+  
+  
+  
+  
+  
+  
+  
+  
+  

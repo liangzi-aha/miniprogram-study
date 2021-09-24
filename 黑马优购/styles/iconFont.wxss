@@ -1,0 +1,66 @@
+@font-face {
+  font-family: "iconfont"; /* Project id 2819674 */
+  src: url('//at.alicdn.com/t/font_2819674_szagkfyymn.woff2?t=1632049591645') format('woff2'),
+       url('//at.alicdn.com/t/font_2819674_szagkfyymn.woff?t=1632049591645') format('woff'),
+       url('//at.alicdn.com/t/font_2819674_szagkfyymn.ttf?t=1632049591645') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-daifukuan-copy:before {
+  content: "\e602";
+}
+
+.icon-tuikuan:before {
+  content: "\e610";
+}
+
+.icon-userMenu2-3:before {
+  content: "\e603";
+}
+
+.icon-dingdan:before {
+  content: "\e624";
+}
+
+.icon-fenxiang:before {
+  content: "\e61c";
+}
+
+.icon-che1:before {
+  content: "\e601";
+}
+
+.icon-kefu:before {
+  content: "\e66b";
+}
+
+.icon-kefu1:before {
+  content: "\e60c";
+}
+
+.icon-shoucang:before {
+  content: "\e61f";
+}
+
+.icon-shoucang1:before {
+  content: "\e606";
+}
+
+.icon-zanwutupian1:before {
+  content: "\e648";
+}
+
+.icon-zanwutupian:before {
+  content: "\e600";
+}
+
+.icon-qicheqianlian-:before {
+  content: "\e618";
+}

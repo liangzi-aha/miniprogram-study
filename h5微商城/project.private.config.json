@@ -1,0 +1,23 @@
+{
+  "condition": {
+    "plugin": {
+      "list": []
+    },
+    "game": {
+      "list": []
+    },
+    "gamePlugin": {
+      "list": []
+    },
+    "miniprogram": {
+      "list": [
+        {
+          "name": "不存在的页面",
+          "pathName": "pages/demo09/demo0912121",
+          "query": "",
+          "scene": null
+        }
+      ]
+    }
+  }
+}

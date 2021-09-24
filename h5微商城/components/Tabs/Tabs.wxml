@@ -1,0 +1,16 @@
+<view class="tabs">
+    <view class="tabs_title">
+        <!-- <view class="title_tiem active">首页</view>
+        <view class="title_tiem">原创</view>
+        <view class="title_tiem">分类</view> -->
+
+        <view wx:for="{{tabs}}" wx:key="id" class="title_tiem {{item.isActive ? 'active' : ''}}" bind:tap="changeTab" data-id="{{item.id}}">
+            {{item.name}}
+        </view>
+          
+    </view>
+    <view class="tabs_content">
+        <!-- slot 插槽 其实就是一个占位符，和vue的插槽差不多 -->
+        <slot></slot>
+    </view>
+</view>

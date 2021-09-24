@@ -1,0 +1,5 @@
+微信小程序表达式：
+    1、if else
+        2、Switch
+        3、do while
+        4、for

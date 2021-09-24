@@ -1,0 +1,31 @@
+/* 全局样式中进入iconfont，所有页面都可以使用 */
+@import './styles//iconFont.wxss';
+
+/* 在微信中不支持通配符 *  */
+page,view,text,swiper,swiper-item,image,navigator{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* 
+主题颜色 通过变量来实现 
+1 less 中存在 斌量这个知识
+2 原生的css 和 wxss也是支持变量
+*/
+/* page 标签上 css 变量，子元素都可以使用该变量 color: var(--themeColor) */
+page{
+  /* 定义主题颜色 */
+  --themeColor: #eb4450;
+  /* 
+  rpx（responsive pixel）: 可以根据屏幕宽度进行自适应。规定屏幕宽为750rpx。如在 iPhone6 上，屏幕宽度为375px，共有750个物理像素，则750rpx = 375px = 750物理像素，1rpx = 0.5px = 1物理像素。
+  定义统一字体大小
+  1px = 2rpx
+  14px = 28rpx
+  */
+  font-size: 28rpx;
+}
+
+image{
+  width: 100%;
+}

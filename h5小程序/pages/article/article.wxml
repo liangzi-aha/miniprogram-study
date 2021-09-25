@@ -1,0 +1,13 @@
+<!-- pages/article/article.wxml -->
+<view class="article">
+    <view>
+        <view>
+            <mp-navigation-bar title="文章详情" back="true" background="#ffffff"></mp-navigation-bar>
+            <view class="title">保险经纪网 <text>{{articleMessage.data.updateTime}}</text></view>
+            <view style="padding: 0 20px;">
+                <parser html="{{articleMessage.data.classroomContent}}" />
+            </view>
+        </view>
+        
+    </view>
+</view>

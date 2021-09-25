@@ -1,0 +1,13 @@
+# miniprogram-study
+1、项目结构
+    （1）components 为公用组件文件夹
+    components 下的 parse 用于解析html字符串渲染。和微信的富文本功能差不多
+    （2）custom-tab-bar 自定义写的 tabbar组件，在index.js中写入"component": true 定义为该页面为组件, 在app.json usingComponents中定义就可以全局使用该组件了
+    （3）pages 就是我们的页面
+    （4）assets 为资源文件（图片）
+
+2、组件和页面的区别
+    （1）js文件中 组件为component(),而页面为page()
+    （2）组件不能配置在 app.json pages 中
+    （3）页面和组件都可以作为公众组件使用
+    （4）组件和页面中，在 json 文件中设置 "component": true 即可

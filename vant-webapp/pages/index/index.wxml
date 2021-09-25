@@ -1,7 +1,7 @@
 <!--index.wxml-->
 <view class="container">
-  <van-button type="primary">vant-web按钮</van-button>
+  <van-button type="primary" bindtap="changeDialog">vant-web按钮</van-button>
   <mp-dialog title="test" show="{{dialog}}" bindbuttontap="tapDialogButton" buttons="{{buttons}}">
-    <view>test content</view>
+    <view>weUi弹框</view>
 </mp-dialog>
 </view>

@@ -8,12 +8,17 @@ Page({
       { text: '取消' },
       { text: '确认' }
     ],
-    dialog: true,
+    dialog: false,
   },
   tapDialogButton(detail){
     console.log(detail);
     this.setData({
       dialog: false
+    })
+  },
+  changeDialog(){
+    this.setData({
+      dialog: true
     })
   },
   getUserProfile(e) {

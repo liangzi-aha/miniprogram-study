@@ -1,1 +1,91 @@
 /* pages/mine/mine.wxss */
+.page{
+    padding-bottom:120rpx;
+}
+.mine_title{
+    padding:10px;
+    text-align:center;
+    position:relative;
+    overflow: hidden!important;
+}
+.mine_icon{
+    display:inline-block;
+    position:absolute;
+    right:10px;
+    top:0;
+    bottom:0;
+    margin:auto;
+    padding:10px 0 10px 0;
+}
+.mine_user{
+    height:120px;
+    overflow:hidden;
+    position:relative;
+}
+.mine_user_bgc{
+    width:100%;
+    position:absolute;
+    top:0;
+    z-index:-1;
+}
+.mine_userHead{
+    float:left;
+}
+.mine_userHead image{
+    width:80px;
+    height:80px;
+    margin:20px;
+}
+.user_dateils{
+    float:left;
+    margin-top: 30px;
+    color:white;
+}
+.login{
+    border-radius:15px;
+    border:solid 1px white;
+    display: inline;
+    padding: 0 5px;
+}
+.mine_user_icon{
+    float:left;
+    margin:42px 0 0 30px;
+}
+.sameTitle {
+    padding: 10px 20px;
+    border-bottom: 1px solid #eee;
+    overflow:hidden;
+}
+.sameTitle .leftB {
+    width: 5px;
+    height: 20px;
+    background: linear-gradient(150deg,#38a4ff,#60cffa);
+    border-radius: 2.5px;
+    float:left;
+    vertical-align: middle;
+    margin-top: 3px;
+    margin-right: 10px;
+
+}
+.sameTitle .titleA {
+    float:left;
+    vertical-align: middle;
+}
+.agent{
+    padding:0 20px 10px;
+}
+.agent image{
+    width:100%;
+}
+.policyContenet{
+    display:flex;
+    justify-content: space-around;
+}
+.policyContenet>view{
+    width: 30%;
+    text-align:center;
+    padding: 10px 0;
+}
+.policyContenet view image{
+    width:30%;
+}

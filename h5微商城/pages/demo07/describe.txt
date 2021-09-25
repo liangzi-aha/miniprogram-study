@@ -1,2 +1,0 @@
-less 使用 @import 引入样式使用
-微信小程序使用less查看博客：https://www.cnblogs.com/liangziaha/p/15293669.html

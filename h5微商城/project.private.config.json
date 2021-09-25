@@ -12,9 +12,9 @@
     "miniprogram": {
       "list": [
         {
-          "name": "不存在的页面",
-          "pathName": "pages/demo09/demo0912121",
-          "query": "",
+          "name": "文章详情",
+          "pathName": "pages/article/article",
+          "query": "id=1536",
           "scene": null
         }
       ]

@@ -1,4 +1,0 @@
-/* pages/demo09/demo09.wxss */
-.hidden{
-    display: none;
-}
